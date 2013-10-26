@@ -1,5 +1,9 @@
 language: node_js
+<<<<<<< HEAD
 script: "./src/travelator && npm install && npm test"
+=======
+script: "cd ./src/travelator && npm install && npm test"
+>>>>>>> 12e80f5417eb4fbcd6ea0b86af2d588113af3e1d
 node_js:
   - "0.11"
   - "0.10"

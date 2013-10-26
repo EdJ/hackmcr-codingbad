@@ -9,7 +9,7 @@ We're entering the WebAppsUK challenge: A browser-based travel-themed game.
  - Ed Woodcock - @sigmoidfx
  - Andy Lowry - @azd_lowry
  - Dave Wong - @fractiva
- - Srinivas Sunkari - @ssunkari
+ - Srinivas Sunkari - @sunkari43
 
 ## License
 

@@ -1,22 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Travelator</title>
-<link href="css/travelator.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-<div>
-Make the game here
-<canvas id="testCanvas" width="960" height="400"></canvas>
 
-<script src="/socket.io/socket.io.js"></script>
-<script>
-  var socket = io.connect('http://localhost');
-  socket.on('news', function (data) {
-    console.log(data);
-    socket.emit('my other event', { my: 'data' });
-  });
-</script>
-</div>
+<head>
+    <title>Travelator</title>
+    <link href="css/travelator.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/createjs/events/Event.js"></script>
+    <script type="text/javascript" src="js/createjs/events/EventDispatcher.js"></script>
+    <script type="text/javascript" src="js/createjs/utils/IndexOf.js"></script>
+    <script type="text/javascript" src="js/easeljs/utils/UID.js"></script>
+    <script type="text/javascript" src="js/easeljs/utils/Ticker.js"></script>
+    <script type="text/javascript" src="js/easeljs/geom/Matrix2D.js"></script>
+    <script type="text/javascript" src="js/easeljs/geom/Point.js"></script>
+    <script type="text/javascript" src="js/easeljs/geom/Rectangle.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/Shadow.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/SpriteSheet.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/Graphics.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/DisplayObject.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/Container.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/Stage.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/Bitmap.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/Sprite.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/BitmapAnimation.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/BitmapText.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/Shape.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/Text.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/DOMElement.js"></script>
+    <script type="text/javascript" src="js/easeljs/events/MouseEvent.js"></script>
+    <script type="text/javascript" src="js/easeljs/filters/Filter.js"></script>
+    <script type="text/javascript" src="js/easeljs/ui/ButtonHelper.js"></script>
+    <script type="text/javascript" src="js/easeljs/ui/Touch.js"></script>
+    <script type="text/javascript" src="js/easeljs/utils/SpriteSheetUtils.js"></script>
+    <script type="text/javascript" src="js/easeljs/utils/SpriteSheetBuilder.js"></script>
+</head>
+
+<body>
+    <div>
+        Make the game here
+        <canvas id="testCanvas" width="960" height="400"></canvas>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+        var socket = io.connect('http://localhost');
+        socket.on('news', function(data) {
+            console.log(data);
+            socket.emit('my other event', {
+                my: 'data'
+            });
+        });
+        </script>
+    </div>
 </body>
+
 </html>

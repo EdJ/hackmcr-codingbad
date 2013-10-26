@@ -10,5 +10,9 @@
   "license": "BSD",
   "dependencies": {
     "socket.io": "~0.9.16"
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0",
+    "chai": "~1.8.1"
   }
 }

@@ -1,4 +1,5 @@
 ## Coding Bad's Hack Manchester Entry
+[![Build Status](https://travis-ci.org/EdJ/hackmcr-codingbad.png?branch=master)](https://travis-ci.org/EdJ/hackmcr-codingbad)
 
 ## Overview
 

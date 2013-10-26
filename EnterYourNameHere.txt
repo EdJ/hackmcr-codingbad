@@ -2,7 +2,6 @@
 Team Members
 
 Andy Lowry
-<<<<<<< HEAD
 Srinivas Sunkari
 =======
 Dave Wong

@@ -5,9 +5,9 @@ Vagrant.configure("2") do |config|
   config.vm.box = "precise64"
   config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
-  config.vm.network :forwarded_port, guest: 8080, host: 8080
+  config.vm.network :forwarded_port, guest: 1234, host: 1234
 
-  config.vm.synced_folder "./src", "/home/vagrant/workspace"
+  config.vm.synced_folder "../hackmcr-codingbad-node", "/home/vagrant/workspace/travelator"
 
   config.berkshelf.enabled = true
 

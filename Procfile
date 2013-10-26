@@ -1,1 +1,0 @@
-web: node src/travelator/index.js

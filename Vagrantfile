@@ -7,7 +7,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.network :forwarded_port, guest: 8080, host: 8080
 
-  config.vm.synced_folder "./src", "/home/vagrant/workspace"
+  config.vm.synced_folder "../hackmcr-codingbad-node", "/home/vagrant/workspace/travelator"
 
   config.berkshelf.enabled = true
 
